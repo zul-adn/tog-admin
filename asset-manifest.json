@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/tog-admin/static/css/main.18a3e09a.chunk.css",
+    "main.js": "/tog-admin/static/js/main.2477132e.chunk.js",
+    "main.js.map": "/tog-admin/static/js/main.2477132e.chunk.js.map",
+    "runtime-main.js": "/tog-admin/static/js/runtime-main.7c13250b.js",
+    "runtime-main.js.map": "/tog-admin/static/js/runtime-main.7c13250b.js.map",
+    "static/js/2.d278155d.chunk.js": "/tog-admin/static/js/2.d278155d.chunk.js",
+    "static/js/2.d278155d.chunk.js.map": "/tog-admin/static/js/2.d278155d.chunk.js.map",
+    "static/js/3.69ba5b43.chunk.js": "/tog-admin/static/js/3.69ba5b43.chunk.js",
+    "static/js/3.69ba5b43.chunk.js.map": "/tog-admin/static/js/3.69ba5b43.chunk.js.map",
+    "index.html": "/tog-admin/index.html",
+    "static/css/main.18a3e09a.chunk.css.map": "/tog-admin/static/css/main.18a3e09a.chunk.css.map",
+    "static/js/2.d278155d.chunk.js.LICENSE.txt": "/tog-admin/static/js/2.d278155d.chunk.js.LICENSE.txt",
+    "static/media/girl.c6ca5751.png": "/tog-admin/static/media/girl.c6ca5751.png",
+    "static/media/logo.29a2b93c.png": "/tog-admin/static/media/logo.29a2b93c.png",
+    "static/media/logo.6ce24c58.svg": "/tog-admin/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7c13250b.js",
+    "static/js/2.d278155d.chunk.js",
+    "static/css/main.18a3e09a.chunk.css",
+    "static/js/main.2477132e.chunk.js"
+  ]
+}
