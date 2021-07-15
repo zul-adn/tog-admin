@@ -1,7 +1,9 @@
 const initState = {
     datas: [],
     isLogin: true,
-    datas_detail: []
+    datas_detail: [],
+    isLoadingDel1: false,
+    isLoadingDel2: true
 }
 
 export default (state = initState, action) => {

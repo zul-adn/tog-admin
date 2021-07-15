@@ -8,12 +8,21 @@ import {
     resetDetails
 } from './../../store/app/action';
 import axios from 'axios';
+import { css } from "@emotion/react";
+import ClipLoader from "react-spinners/ClipLoader";
 import moment from 'moment';
 import 'moment/locale/id';  // without this line it didn't work
 
+
 moment.locale('id');
 
-function List({ datas, getAllDatas, createName, getDetails, resetDetails, datas_detail }) {
+const override = css`
+  display: block;
+  margin: 0 auto;
+  border-color: red;
+`;
+
+function List({ datas, getAllDatas, createName, getDetails, resetDetails, datas_detail,   }) {
 
     const [dataas, setDataas] = React.useState([])
     const [tambahNama, setTambah] = React.useState(false)
@@ -21,6 +30,8 @@ function List({ datas, getAllDatas, createName, getDetails, resetDetails, datas_
     const [updateNomor, setUpdateNomor] = React.useState('')
     const [isDetail, setIsDetail] = React.useState(false)
     const [nama, setNama] = React.useState('')
+    const [isLoadingDel1, setIsLoadingDel1] = React.useState(false)
+    const [isLoadingDel2, setIsLoadingDel2] = React.useState(false)
 
     const setVal = (dataaa) => {
         setTambah(false)
@@ -101,6 +112,7 @@ function List({ datas, getAllDatas, createName, getDetails, resetDetails, datas_
     }
 
     const del = (id) => {
+        setIsLoadingDel1(true)
         const body = {
             id: id,
         }
@@ -111,6 +123,7 @@ function List({ datas, getAllDatas, createName, getDetails, resetDetails, datas_
                     getAllDatas()
                     closeModal()
                     setUpdateNomor("")
+                    setIsLoadingDel1(false)
                 } else {
 
                 }
@@ -118,6 +131,7 @@ function List({ datas, getAllDatas, createName, getDetails, resetDetails, datas_
     }
 
     const delDetail = (id, id_nama) => {
+        setIsLoadingDel2(true)
         const body = {
             id: id,
         }
@@ -125,6 +139,7 @@ function List({ datas, getAllDatas, createName, getDetails, resetDetails, datas_
             .then(response => {
                 if (response.status === 200) {
                     getDetail(nama, id_nama)
+                    setIsLoadingDel2(false)
                 } else {
 
                 }
@@ -177,7 +192,7 @@ function List({ datas, getAllDatas, createName, getDetails, resetDetails, datas_
                                         <div >
                                             <div onClick={() => setVal(data)} style={{ padding: 5, textAlign: 'center', backgroundColor: data.status === '1' ? 'red' : '#273c75', color: 'white', borderRadius: 10 }} onClick={() => updateStatus(data.id, data.status)}>{data.status === '1' ? 'Tutup' : 'Buka'}</div>
                                             <div onClick={() => setVal(data)} style={{ padding: 5, textAlign: 'center', backgroundColor: '#273c75', color: 'white', borderRadius: 10 }}>Edit</div>
-                                            <div onClick={() => del(data.id)} style={{ padding: 5, textAlign: 'center', backgroundColor: 'red', color: 'white', borderRadius: 10 }}>Hapus</div>
+                                            <div onClick={() => del(data.id)} style={{ padding: 5, textAlign: 'center', backgroundColor: 'red', color: 'white', borderRadius: 10 }}>{isLoadingDel1 ? 'Loading...' : 'Hapus'}</div>
                                         </div>
                                     </td>
                                 </tr>
@@ -195,7 +210,7 @@ function List({ datas, getAllDatas, createName, getDetails, resetDetails, datas_
                                 <tr key={i}>
                                     <td >{moment(data.created_at).format("dddd, Do MMMM YYYY")}</td>
                                     <td >{data.nomor}</td>
-                                    <div onClick={() => delDetail(data.id, data.id_nama)} style={{ padding: 5, textAlign: 'center', backgroundColor: 'red', color: 'white', borderRadius: 10 }}>Hapus</div>
+                                    <div onClick={() => delDetail(data.id, data.id_nama)} style={{ padding: 5, textAlign: 'center', backgroundColor: 'red', color: 'white', borderRadius: 10 }}> {isLoadingDel2 ? 'Loading...' : 'Hapus'}</div>
                                 </tr>
                             )
                             :
@@ -222,7 +237,7 @@ function List({ datas, getAllDatas, createName, getDetails, resetDetails, datas_
 const mapStateToProps = ({ app }) => {
     return {
         datas: app.datas,
-        datas_detail: app.datas_detail
+        datas_detail: app.datas_detail,
     }
 }
 
