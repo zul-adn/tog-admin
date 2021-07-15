@@ -120,10 +120,11 @@ function List({ datas, getAllDatas, createName, getDetails, resetDetails, datas_
         axios.post('https://dinartech.com/tog/public/api/delete', body)
             .then(response => {
                 if (response.status === 200) {
+                    alert("Data berhasil dihapus")
+                    setIsLoadingDel1(false)
                     getAllDatas()
                     closeModal()
                     setUpdateNomor("")
-                    setIsLoadingDel1(false)
                 } else {
 
                 }
@@ -138,8 +139,9 @@ function List({ datas, getAllDatas, createName, getDetails, resetDetails, datas_
         axios.post('https://dinartech.com/tog/public/api/deletedetail', body)
             .then(response => {
                 if (response.status === 200) {
-                    getDetail(nama, id_nama)
+                    alert("Data berhasil dihapus")
                     setIsLoadingDel2(false)
+                    getDetail(nama, id_nama)
                 } else {
 
                 }
