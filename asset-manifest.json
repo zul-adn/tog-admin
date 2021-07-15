@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/tog-admin/static/css/main.3046b407.chunk.css",
-    "main.js": "/tog-admin/static/js/main.f0a092a5.chunk.js",
-    "main.js.map": "/tog-admin/static/js/main.f0a092a5.chunk.js.map",
-    "runtime-main.js": "/tog-admin/static/js/runtime-main.97dd31d6.js",
-    "runtime-main.js.map": "/tog-admin/static/js/runtime-main.97dd31d6.js.map",
-    "static/js/2.9acf741d.chunk.js": "/tog-admin/static/js/2.9acf741d.chunk.js",
-    "static/js/2.9acf741d.chunk.js.map": "/tog-admin/static/js/2.9acf741d.chunk.js.map",
-    "static/js/3.031bbfd5.chunk.js": "/tog-admin/static/js/3.031bbfd5.chunk.js",
-    "static/js/3.031bbfd5.chunk.js.map": "/tog-admin/static/js/3.031bbfd5.chunk.js.map",
+    "main.css": "/tog-admin/static/css/main.4e143479.chunk.css",
+    "main.js": "/tog-admin/static/js/main.326ad7c7.chunk.js",
+    "main.js.map": "/tog-admin/static/js/main.326ad7c7.chunk.js.map",
+    "runtime-main.js": "/tog-admin/static/js/runtime-main.a6ee1271.js",
+    "runtime-main.js.map": "/tog-admin/static/js/runtime-main.a6ee1271.js.map",
+    "static/js/2.8346cb92.chunk.js": "/tog-admin/static/js/2.8346cb92.chunk.js",
+    "static/js/2.8346cb92.chunk.js.map": "/tog-admin/static/js/2.8346cb92.chunk.js.map",
+    "static/js/3.af9419af.chunk.js": "/tog-admin/static/js/3.af9419af.chunk.js",
+    "static/js/3.af9419af.chunk.js.map": "/tog-admin/static/js/3.af9419af.chunk.js.map",
     "index.html": "/tog-admin/index.html",
-    "static/css/main.3046b407.chunk.css.map": "/tog-admin/static/css/main.3046b407.chunk.css.map",
-    "static/js/2.9acf741d.chunk.js.LICENSE.txt": "/tog-admin/static/js/2.9acf741d.chunk.js.LICENSE.txt",
+    "static/css/main.4e143479.chunk.css.map": "/tog-admin/static/css/main.4e143479.chunk.css.map",
+    "static/js/2.8346cb92.chunk.js.LICENSE.txt": "/tog-admin/static/js/2.8346cb92.chunk.js.LICENSE.txt",
     "static/media/girl.c6ca5751.png": "/tog-admin/static/media/girl.c6ca5751.png",
     "static/media/logo.29a2b93c.png": "/tog-admin/static/media/logo.29a2b93c.png",
     "static/media/logo.6ce24c58.svg": "/tog-admin/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.97dd31d6.js",
-    "static/js/2.9acf741d.chunk.js",
-    "static/css/main.3046b407.chunk.css",
-    "static/js/main.f0a092a5.chunk.js"
+    "static/js/runtime-main.a6ee1271.js",
+    "static/js/2.8346cb92.chunk.js",
+    "static/css/main.4e143479.chunk.css",
+    "static/js/main.326ad7c7.chunk.js"
   ]
 }
